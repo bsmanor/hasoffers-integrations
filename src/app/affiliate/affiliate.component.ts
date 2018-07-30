@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {MatListModule} from '@angular/material/list';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  templateUrl: './affiliate.component.html',
+  styleUrls: ['./affiliate.component.css']
 })
 export class AppComponent {
 
@@ -15,5 +15,20 @@ export class AppComponent {
     'dne_list_id', 'email_instructions', 'email_instructions_from', 'email_instructions_subject', 'has_goals_enabled',
     'default_goal_name', 'use_target_rules', 'is_expired', 'dne_download_url', 'dne_unsubscribe_url'
   ];
+
+}
+
+
+@Component({
+  selector: 'app-affiliate',
+  templateUrl: './affiliate.component.html',
+  styleUrls: ['./affiliate.component.css']
+})
+export class AffiliateComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
 
 }

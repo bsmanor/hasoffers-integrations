@@ -1,0 +1,21 @@
+
+<div id="networks-information" fxLayout="row" fxLayoutAlign="space-around">
+  <div>ORIGIN</div>
+  <div></div>
+  <div>DESTINATION</div>
+</div>
+
+<div id="properties" style="height: 60vh; overflow: auto;">
+  <div fxLayout="row">
+    <div fxLayout fxFlex="50%">
+      <mat-selection-list>
+        <mat-list-option *ngFor="let item of offerProperties">{{item}}</mat-list-option>
+      </mat-selection-list>
+    </div>
+  </div>
+</div>
+
+<div id="action">
+<button mat-raised-button color="primary">Transfer</button>
+</div>
+    
